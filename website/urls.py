@@ -2,5 +2,7 @@ from django.urls import path
 from website import views
 
 urlpatterns = [
-    path('http_test', views.http_test),
+    path('', views.index_view),
+    path('about/', views.about_view),
+    path('contact/', views.contact_view),
 ]
